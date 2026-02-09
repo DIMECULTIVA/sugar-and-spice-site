@@ -4,9 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sugar & Spice Wellness Spa | Luxury Treatments</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
 
@@ -18,9 +16,8 @@
                         spa: {
                             black: '#1a1a1a',
                             charcoal: '#2D2D2D',
-                            teal: '#2DD4BF', // Sugar & Spice Teal
+                            teal: '#2DD4BF', 
                             darkTeal: '#0F766E',
-                            gold: '#D4AF37',
                         }
                     },
                     fontFamily: {
@@ -31,24 +28,12 @@
             }
         }
     </script>
-
     <style>
-        /* Custom Scrollbar */
         ::-webkit-scrollbar { width: 10px; }
         ::-webkit-scrollbar-track { background: #1a1a1a; }
         ::-webkit-scrollbar-thumb { background: #2D2D2D; border-radius: 5px; }
-        ::-webkit-scrollbar-thumb:hover { background: #2DD4BF; }
-        
-        /* Smooth Fade In Animation */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.8s ease-out, transform 0.8s ease-out; }
+        .visible { opacity: 1; transform: translateY(0); }
     </style>
 </head>
 <body class="bg-spa-black text-gray-100 font-sans antialiased">
@@ -64,26 +49,17 @@
                 <a href="#menu" class="hover:text-spa-teal transition-colors">Menu</a>
                 <a href="#contact" class="hover:text-spa-teal transition-colors">Contact</a>
             </div>
-            <button class="md:hidden text-white" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
-                <i data-lucide="menu"></i>
-            </button>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden bg-spa-charcoal p-4 space-y-4 text-center">
-            <a href="#about" class="block hover:text-spa-teal">About</a>
-            <a href="#menu" class="block hover:text-spa-teal">Menu</a>
-            <a href="#contact" class="block hover:text-spa-teal">Contact</a>
         </div>
     </nav>
 
     <header class="relative h-screen flex items-center justify-center overflow-hidden">
-        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('images/hero.jpg');">
+        <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('hero.jpg');">
             <div class="absolute inset-0 bg-black/60"></div>
         </div>
         
         <div class="relative z-10 text-center px-6 max-w-4xl">
             <p class="text-spa-teal uppercase tracking-[0.3em] text-sm mb-4 animate-pulse">Welcome to Serenity</p>
             <h1 class="text-5xl md:text-7xl font-serif text-white mb-6">Restoring Balance, <br> <span class="italic text-spa-teal">Reviving Spirits</span></h1>
-            <p class="text-xl text-gray-300 mb-8 font-light">Luxury wellness treatments in Centurion & Polokwane.</p>
             <a href="#menu" class="inline-block bg-spa-teal hover:bg-white hover:text-spa-black text-white px-8 py-3 rounded-full uppercase tracking-widest transition-all">View Menu</a>
         </div>
     </header>
@@ -91,14 +67,14 @@
     <section id="about" class="py-20 bg-spa-charcoal">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="reveal">
-                <img src="images/couple.jpg" alt="Couple Room" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                <img src="couple.jpg" alt="Couple Room" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
             </div>
             <div class="reveal">
                 <h2 class="text-sm font-bold text-spa-teal tracking-widest uppercase mb-2">Our Story</h2>
                 <h3 class="text-4xl font-serif text-white mb-6">Born from a Passion for <span class="italic text-spa-teal">Excellence</span></h3>
                 <p class="text-gray-400 leading-relaxed mb-4">
                     Sugar & Spice Wellness Spa was founded by a husband-and-wife team who spent years searching for the perfect spa experience. 
-                    Realizing that "good enough" wasn't enough, we created the sanctuary we always wanted—a place where premium products meets world-class relaxation.
+                    Realizing that "good enough" wasn't enough, we created the sanctuary we always wanted.
                 </p>
             </div>
         </div>
@@ -109,27 +85,24 @@
             <h2 class="text-4xl font-serif text-center mb-16 text-white">Signature <span class="text-spa-teal">Experiences</span></h2>
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="group relative h-96 rounded-xl overflow-hidden cursor-pointer">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('images/products.jpg');"></div>
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('products.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 p-8">
                         <h3 class="text-2xl font-serif text-white mb-2">Skincare & Facials</h3>
-                        <p class="text-gray-300 text-sm">Premium SIX skincare treatments.</p>
                     </div>
                 </div>
                 <div class="group relative h-96 rounded-xl overflow-hidden cursor-pointer">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('images/pool.jpg');"></div>
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('pool.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 p-8">
                         <h3 class="text-2xl font-serif text-white mb-2">Poolside Packages</h3>
-                        <p class="text-gray-300 text-sm">Relaxation in our tropical gardens.</p>
                     </div>
                 </div>
                 <div class="group relative h-96 rounded-xl overflow-hidden cursor-pointer">
-                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('images/reception.jpg');"></div>
+                    <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image: url('reception.jpg');"></div>
                     <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent"></div>
                     <div class="absolute bottom-0 p-8">
                         <h3 class="text-2xl font-serif text-white mb-2">Luxury Massages</h3>
-                        <p class="text-gray-300 text-sm">Hot stone, deep tissue, and aromatherapy.</p>
                     </div>
                 </div>
             </div>
@@ -146,9 +119,7 @@
                 <button onclick="openTab('nails')" class="tab-btn px-6 py-2 rounded-full border border-white/20 text-gray-400 hover:text-spa-teal hover:border-spa-teal uppercase text-sm transition-all">Nails</button>
                 <button onclick="openTab('hair')" class="tab-btn px-6 py-2 rounded-full border border-white/20 text-gray-400 hover:text-spa-teal hover:border-spa-teal uppercase text-sm transition-all">Hair</button>
             </div>
-
-            <div id="tab-content" class="bg-white/5 rounded-2xl p-8 border border-white/10">
-                </div>
+            <div id="tab-content" class="bg-white/5 rounded-2xl p-8 border border-white/10"></div>
         </div>
     </section>
 
@@ -158,16 +129,16 @@
         </div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4 px-4 h-[600px]">
             <div class="col-span-2 row-span-2 relative rounded-xl overflow-hidden group">
-                <img src="images/pool.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="pool.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             </div>
             <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden group">
-                <img src="images/reception.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="reception.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             </div>
             <div class="col-span-1 row-span-2 relative rounded-xl overflow-hidden group">
-                <img src="images/hero.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="room-vertical.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             </div>
              <div class="col-span-1 row-span-1 relative rounded-xl overflow-hidden group">
-                <img src="images/products.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                <img src="products.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
             </div>
         </div>
     </section>
@@ -179,24 +150,15 @@
                 <div class="space-y-6">
                     <div class="flex items-start gap-4">
                         <i data-lucide="map-pin" class="text-spa-teal"></i>
-                        <div>
-                            <h4 class="text-lg font-bold">Centurion</h4>
-                            <p class="text-gray-400">20 Rabie Road, Monavoni</p>
-                        </div>
+                        <div><h4 class="text-lg font-bold">Centurion</h4><p class="text-gray-400">20 Rabie Road, Monavoni</p></div>
                     </div>
                     <div class="flex items-start gap-4">
                         <i data-lucide="map-pin" class="text-spa-teal"></i>
-                        <div>
-                            <h4 class="text-lg font-bold">Polokwane</h4>
-                            <p class="text-gray-400">81 Kleinberg Street</p>
-                        </div>
+                        <div><h4 class="text-lg font-bold">Polokwane</h4><p class="text-gray-400">81 Kleinberg Street</p></div>
                     </div>
                     <div class="flex items-start gap-4">
                         <i data-lucide="phone" class="text-spa-teal"></i>
-                        <div>
-                            <h4 class="text-lg font-bold">Bookings</h4>
-                            <p class="text-gray-400">076 308 8254 (WhatsApp Preferred)</p>
-                        </div>
+                        <div><h4 class="text-lg font-bold">Bookings</h4><p class="text-gray-400">076 308 8254</p></div>
                     </div>
                 </div>
             </div>
@@ -208,46 +170,24 @@
 
     <footer class="bg-black py-10 border-t border-white/10 text-center">
         <div class="flex justify-center gap-6 mb-6">
-            <a href="https://www.instagram.com/sugarandspice.wellnessspa?igsh=bXgzdW9teWxoMW1l" target="_blank" class="text-white hover:text-spa-teal">
-                <i data-lucide="instagram"></i>
-            </a>
-            <a href="https://wa.me/27763088254" target="_blank" class="text-white hover:text-spa-teal">
-                <i data-lucide="message-circle"></i>
-            </a>
+            <a href="https://www.instagram.com/sugarandspice.wellnessspa?igsh=bXgzdW9teWxoMW1l" target="_blank" class="text-white hover:text-spa-teal"><i data-lucide="instagram"></i></a>
+            <a href="https://wa.me/27763088254" target="_blank" class="text-white hover:text-spa-teal"><i data-lucide="message-circle"></i></a>
         </div>
         <p class="text-gray-500 text-sm">© 2026 Sugar & Spice Wellness Spa. All rights reserved.</p>
     </footer>
-
-    <div id="cookie-banner" class="fixed bottom-0 w-full bg-spa-charcoal/95 backdrop-blur border-t border-white/10 p-4 z-50 transform translate-y-full transition-transform duration-500 flex flex-col md:flex-row justify-between items-center gap-4">
-        <p class="text-gray-300 text-sm text-center md:text-left">We use cookies to ensure you get the best experience on our website.</p>
-        <div class="flex gap-4">
-            <button onclick="document.getElementById('cookie-banner').classList.add('translate-y-full')" class="text-gray-400 text-sm hover:text-white">Decline</button>
-            <button onclick="acceptCookies()" class="bg-spa-teal text-white px-6 py-2 rounded text-sm hover:bg-white hover:text-black transition">Accept</button>
-        </div>
-    </div>
 
     <a href="https://wa.me/27763088254?text=Hi,%20I%20would%20like%20to%20make%20a%20booking" target="_blank" class="fixed bottom-6 right-6 bg-spa-teal text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-40">
         <i data-lucide="message-circle" width="28" height="28"></i>
     </a>
 
     <script>
-        // Initialize Icons
         lucide.createIcons();
 
-        // 1. SCROLL REVEAL ANIMATION
         const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if(entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
+            entries.forEach(entry => { if(entry.isIntersecting) entry.target.classList.add('visible'); });
         });
-        document.querySelectorAll('.reveal').forEach(el => {
-            el.classList.add('fade-in');
-            observer.observe(el);
-        });
+        document.querySelectorAll('.reveal').forEach(el => { el.classList.add('fade-in'); observer.observe(el); });
 
-        // 2. MENU DATA (from your Price List)
         const menuData = {
             massages: [
                 { name: 'Indian Head', price: 'R200', time: '30 Min' },
@@ -274,9 +214,7 @@
             ]
         };
 
-        // 3. TAB LOGIC
         function openTab(category) {
-            // Update Buttons
             document.querySelectorAll('.tab-btn').forEach(btn => {
                 btn.classList.remove('bg-spa-teal', 'text-white', 'border-transparent');
                 btn.classList.add('text-gray-400', 'border-white/20');
@@ -284,35 +222,15 @@
             event.target.classList.add('bg-spa-teal', 'text-white', 'border-transparent');
             event.target.classList.remove('text-gray-400', 'border-white/20');
 
-            // Render Content
             const container = document.getElementById('tab-content');
             container.innerHTML = menuData[category].map(item => `
                 <div class="flex justify-between items-center border-b border-white/10 pb-4 mb-4 last:border-0 last:mb-0">
-                    <div>
-                        <h4 class="text-white text-lg font-serif">${item.name}</h4>
-                        <span class="text-spa-teal text-sm">${item.time}</span>
-                    </div>
-                    <div class="flex items-center gap-4">
-                        <span class="text-white font-light text-xl">${item.price}</span>
-                        <a href="https://wa.me/27763088254?text=Book ${item.name}" target="_blank" class="text-xs border border-white/30 px-3 py-1 rounded hover:bg-spa-teal hover:border-spa-teal transition">BOOK</a>
-                    </div>
+                    <div><h4 class="text-white text-lg font-serif">${item.name}</h4><span class="text-spa-teal text-sm">${item.time}</span></div>
+                    <div class="flex items-center gap-4"><span class="text-white font-light text-xl">${item.price}</span><a href="https://wa.me/27763088254?text=Book ${item.name}" target="_blank" class="text-xs border border-white/30 px-3 py-1 rounded hover:bg-spa-teal hover:border-spa-teal transition">BOOK</a></div>
                 </div>
             `).join('');
         }
-
-        // Load default tab
         document.querySelector('.tab-btn').click();
-
-        // 4. COOKIE LOGIC
-        if (!localStorage.getItem('cookiesAccepted')) {
-            setTimeout(() => {
-                document.getElementById('cookie-banner').classList.remove('translate-y-full');
-            }, 2000);
-        }
-        function acceptCookies() {
-            localStorage.setItem('cookiesAccepted', 'true');
-            document.getElementById('cookie-banner').classList.add('translate-y-full');
-        }
     </script>
 </body>
 </html>
