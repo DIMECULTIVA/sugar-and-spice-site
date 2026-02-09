@@ -54,7 +54,7 @@
 
     <header class="relative h-screen flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('hero.jpg');">
-            <div class="absolute inset-0 bg-black/60"></div>
+            <div class="absolute inset-0 bg-black/50"></div>
         </div>
         
         <div class="relative z-10 text-center px-6 max-w-4xl">
@@ -67,7 +67,7 @@
     <section id="about" class="py-20 bg-spa-charcoal">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
             <div class="reveal">
-                <img src="couple.jpg" alt="Couple Room" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition-all duration-700">
+                <img src="couple.jpg" alt="Couple Room" class="rounded-lg shadow-2xl transition-all duration-700">
             </div>
             <div class="reveal">
                 <h2 class="text-sm font-bold text-spa-teal tracking-widest uppercase mb-2">Our Story</h2>
@@ -163,7 +163,7 @@
                 </div>
             </div>
             <div class="h-80 rounded-xl overflow-hidden border border-white/10">
-                <iframe src="https://maps.google.com/maps?q=20%20Rabie%20Road%20Monavoni&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0; filter: grayscale(100%) invert(92%) contrast(83%);" allowfullscreen="" loading="lazy"></iframe>
+                <iframe src="https://maps.google.com/maps?q=20%20Rabie%20Road%20Monavoni&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </section>
@@ -223,10 +223,15 @@
             event.target.classList.remove('text-gray-400', 'border-white/20');
 
             const container = document.getElementById('tab-content');
+            
+            // UPDATED: WhatsApp message now includes "Hi, i would like to make a booking for..."
             container.innerHTML = menuData[category].map(item => `
                 <div class="flex justify-between items-center border-b border-white/10 pb-4 mb-4 last:border-0 last:mb-0">
                     <div><h4 class="text-white text-lg font-serif">${item.name}</h4><span class="text-spa-teal text-sm">${item.time}</span></div>
-                    <div class="flex items-center gap-4"><span class="text-white font-light text-xl">${item.price}</span><a href="https://wa.me/27763088254?text=Book ${item.name}" target="_blank" class="text-xs border border-white/30 px-3 py-1 rounded hover:bg-spa-teal hover:border-spa-teal transition">BOOK</a></div>
+                    <div class="flex items-center gap-4">
+                        <span class="text-white font-light text-xl">${item.price}</span>
+                        <a href="https://wa.me/27763088254?text=Hi, i would like to make a booking for ${item.name}" target="_blank" class="text-xs border border-white/30 px-3 py-1 rounded hover:bg-spa-teal hover:border-spa-teal transition">BOOK</a>
+                    </div>
                 </div>
             `).join('');
         }
