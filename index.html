@@ -156,9 +156,14 @@
                         <i data-lucide="map-pin" class="text-spa-teal"></i>
                         <div><h4 class="text-lg font-bold">Polokwane</h4><p class="text-gray-400">81 Kleinberg Street</p></div>
                     </div>
+                    
                     <div class="flex items-start gap-4">
                         <i data-lucide="phone" class="text-spa-teal"></i>
-                        <div><h4 class="text-lg font-bold">Bookings</h4><p class="text-gray-400">076 308 8254</p></div>
+                        <div>
+                            <h4 class="text-lg font-bold">Bookings</h4>
+                            <p class="text-gray-400 text-lg">068 494 1664</p>
+                            <p class="text-gray-400 text-sm mt-1">booking@sugarandspice.co.za</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -171,12 +176,12 @@
     <footer class="bg-black py-10 border-t border-white/10 text-center">
         <div class="flex justify-center gap-6 mb-6">
             <a href="https://www.instagram.com/sugarandspice.wellnessspa?igsh=bXgzdW9teWxoMW1l" target="_blank" class="text-white hover:text-spa-teal"><i data-lucide="instagram"></i></a>
-            <a href="https://wa.me/27763088254" target="_blank" class="text-white hover:text-spa-teal"><i data-lucide="message-circle"></i></a>
+            <a href="https://wa.me/27684941664" target="_blank" class="text-white hover:text-spa-teal"><i data-lucide="message-circle"></i></a>
         </div>
         <p class="text-gray-500 text-sm">© 2026 Sugar & Spice Wellness Spa. All rights reserved.</p>
     </footer>
 
-    <a href="https://wa.me/27763088254?text=Hi,%20I%20would%20like%20to%20make%20a%20booking" target="_blank" class="fixed bottom-6 right-6 bg-spa-teal text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-40">
+    <a href="https://wa.me/27684941664?text=Hi,%20i%20would%20like%20to%20make%20a%20booking" target="_blank" class="fixed bottom-6 right-6 bg-spa-teal text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-40">
         <i data-lucide="message-circle" width="28" height="28"></i>
     </a>
 
@@ -224,13 +229,13 @@
 
             const container = document.getElementById('tab-content');
             
-            // UPDATED: WhatsApp message now includes "Hi, i would like to make a booking for..."
+            // UPDATED NUMBER IN JAVASCRIPT
             container.innerHTML = menuData[category].map(item => `
                 <div class="flex justify-between items-center border-b border-white/10 pb-4 mb-4 last:border-0 last:mb-0">
                     <div><h4 class="text-white text-lg font-serif">${item.name}</h4><span class="text-spa-teal text-sm">${item.time}</span></div>
                     <div class="flex items-center gap-4">
                         <span class="text-white font-light text-xl">${item.price}</span>
-                        <a href="https://wa.me/27763088254?text=Hi, i would like to make a booking for ${item.name}" target="_blank" class="text-xs border border-white/30 px-3 py-1 rounded hover:bg-spa-teal hover:border-spa-teal transition">BOOK</a>
+                        <a href="https://wa.me/27684941664?text=Hi, i would like to make a booking for ${item.name}" target="_blank" class="text-xs border border-white/30 px-3 py-1 rounded hover:bg-spa-teal hover:border-spa-teal transition">BOOK</a>
                     </div>
                 </div>
             `).join('');
